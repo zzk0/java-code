@@ -13,6 +13,7 @@ Array: 数组的"类", 调用 newInstance(Class<?>, length) 来创建数组, set
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -55,9 +56,9 @@ public class ObjectPool {
 
     public void readConfig(String filename) {
         URL url = this.getClass().getClassLoader().getResource("1.txt");
-        File file = new File(String.valueOf(url).substring(6));
-        try(FileInputStream fin = new FileInputStream(file)) {
-            config.load(fin);
+        if (url == null) return;
+        try(InputStream is = url.openStream()) {
+            config.load(is);
         }
         catch (IOException e) {
             e.printStackTrace();
