@@ -9,10 +9,15 @@ package top.zzk0.reflect;
 
 然后我们调用这个类去加载 ClassLoaderTest
 > java top.zzk0.reflect.CompileClassLoader top.zzk0.reflect.ClassLoaderTest
+
+这种自定义的 ClassLoader 还可以完成的事情:
+验证数字签名, 看看这个类是否未经过修改, 是否安全
+解密"经过加密的"类文件
 */
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
