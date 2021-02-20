@@ -62,6 +62,7 @@ public class GenericBasic {
         // 例子6: 设定类的形参上限
         Orange<Double> orange1 = new Orange<>();
         Orange<Integer> orange2 = new Orange<>();
+        Orange<Number> orange3 = new Orange<>();
         // Orange<String> orange3; // 非法
 
         // 例子7: 通配符的使用

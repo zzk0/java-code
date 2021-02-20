@@ -2,8 +2,9 @@ package top.zzk0.generic;
 
 /*
 代码阅读顺序:
-GenericBasic    : 泛型基本的使用方法, 泛型类和继承, 通配符, 上限
-GenericMethod   : 泛型方法, 泛型构造器, 下限, 类型擦除, 泛型数组
+GenericBasic        : 泛型基本的使用方法, 泛型类和继承, 通配符, 上限
+GenericMethod       : 泛型方法, 泛型构造器, 下限, 类型擦除, 泛型数组
+GenericReturnValue  : 泛型返回值, 强制转化
 
 泛型需要掌握几个内容:
 泛型的使用: 泛型类, 泛型方法, 泛型构造器, 泛型类的子类(是否泛型取决于子类)
