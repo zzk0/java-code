@@ -1,0 +1,2 @@
+Hello Java
+中文字符 Good
